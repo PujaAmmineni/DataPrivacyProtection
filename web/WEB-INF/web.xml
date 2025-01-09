@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>DBConnectionn</servlet-name>
+        <servlet-class>com.app.utility.DBConnectionn</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>owner_reg</servlet-name>
+        <servlet-class>com.app.action.owner_reg</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>owner_login</servlet-name>
+        <servlet-class>owner_login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>user_login</servlet-name>
+        <servlet-class>com.app.action.user_login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>user_reg</servlet-name>
+        <servlet-class>com.app.action.user_reg</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>owners_login</servlet-name>
+        <servlet-class>com.app.action.owners_login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DataownerUploadAction</servlet-name>
+        <servlet-class>com.app.action.DataownerUploadAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DODownloadAction</servlet-name>
+        <servlet-class>com.app.action.DODownloadAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBConnectionn</servlet-name>
+        <url-pattern>/DBConnectionn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>owner_reg</servlet-name>
+        <url-pattern>/owner_reg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>owner_login</servlet-name>
+        <url-pattern>/owner_login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>user_login</servlet-name>
+        <url-pattern>/user_login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>user_reg</servlet-name>
+        <url-pattern>/user_reg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>owners_login</servlet-name>
+        <url-pattern>/owners_login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DataownerUploadAction</servlet-name>
+        <url-pattern>/DataownerUploadAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DODownloadAction</servlet-name>
+        <url-pattern>/DODownloadAction</url-pattern>
+    </servlet-mapping>
+    <dependency>
+  <groupId>de.svenkubiak</groupId>
+  <artifactId>jBCrypt</artifactId>
+  <version>0.4</version>
+</dependency>
+<dependency>
+  <groupId>com.github.disnarked</groupId>
+  <artifactId>dizk</artifactId>
+  <version>0.1</version>
+</dependency>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
